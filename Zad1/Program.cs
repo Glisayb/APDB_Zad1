@@ -1,6 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 
 
+using System.Globalization;
+
 static int max(int[] ints)
 {
     switch (ints.Length)
@@ -16,15 +18,12 @@ static int max(int[] ints)
             }
         default:
             {
-                int maxValue = ints[0];
+                int sum = 0;
                 foreach (var digit in ints)
                 {
-                    if (digit > maxValue)
-                    {
-                        maxValue = digit;
-                    }
+                    sum += digit;
                 }
-                return maxValue;
+                return (sum/ints.Length);
             }
     }
 }
