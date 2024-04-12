@@ -12,10 +12,6 @@ static int max(int[] ints)
                 Console.WriteLine("Array is empty");
                 return -1;
             }
-        case 1:
-            {
-                return ints[0];
-            }
         default:
             {
                 int sum = 0;
