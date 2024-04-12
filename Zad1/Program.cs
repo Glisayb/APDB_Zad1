@@ -14,6 +14,7 @@ static int max(int[] ints)
             }
         case 1:
             {
+                Console.WriteLine("Skromna ta tablica");
                 return ints[0];
             }
         default:
